@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra, Papel o Tijeras</title>
+</head>
+<body>
+
+    <script>
+
+        let frases = ['piedra', 'tijeras', 'papel']
+
+
+
+        let getComputerChoice = function(){
+            const aleatorio = Math.floor(Math.random() * frases.length);
+            return frases[aleatorio];
+        }
+
+        function playRound(playerSelection, computerSelection) {
+
+            // AQUI EMPIEZA EL CODIGO PARA PIEDRA:
+
+            if (playerSelection === 'piedra' && computerSelection === 'tijeras'){
+                console.log("Enhorabuena jugador, piedra gana a tijeras!");
+
+
+            } else if (playerSelection === 'piedra' && computerSelection === 'papel'){
+                console.log("Has perdido :(, papel le gana a la piedra");
+            } 
+            
+            
+            // AQUI EMPIEZA EL CODIGO PARA TIJERAS:
+
+
+            else if (playerSelection === 'tijeras' && computerSelection === 'papel'){
+                console.log("Enhorabuena jugador, tijeras gana a papel!");
+            } 
+            
+            
+            else if (playerSelection === 'tijeras' && computerSelection === 'piedra'){
+                console.log("Has perdido :(, piedra le gana a la tijeras");
+            }
+
+            // AQUI EMPIEZA EL CODIGO PARA PAPEL:
+
+            else if (playerSelection === 'papel' && computerSelection === 'piedra'){
+                console.log("Enhorabuena jugador, papel gana a piedra!");
+            } 
+            
+            
+            else if (playerSelection === 'papel' && computerSelection === 'tijeras'){
+                console.log("Has perdido :(, piedra le gana al papel");
+            } else {
+                console.log("Ha habido un empate tecnico")
+            }
+
+
+
+
+
+
+            
+        }
+
+        const playerSelection = prompt("Piedra papel o tijeras, una dos y tres...");
+        const computerSelection = getComputerChoice();
+        console.log(playRound(playerSelection, computerSelection));
+
+
+
+
+    </script>
+    
+</body>
+</html>
