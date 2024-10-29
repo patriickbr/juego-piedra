@@ -1,0 +1,42 @@
+body{
+    font-family: sora, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+}
+
+h1{
+    font-size: 2em;
+    color:#f22982;
+   
+}
+.elecciones{
+    margin-bottom: 30px;
+}
+
+.elecciones button{
+font-size: 6em;
+margin: 0px 10px;
+border-radius: 20px;
+border-color: #f22982;
+cursor: pointer;
+
+}
+
+.elecciones button:hover{
+
+border-color: #171616;
+
+}
+
+#jugadorEleccion, #ordenadorEleccion{
+    font-size: 1.5em;
+    font-weight: 340;
+}
+
+#resultadoEleccion{
+    font-size: 2.5em;
+    font-weight: 400;
+}
